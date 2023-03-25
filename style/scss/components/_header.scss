@@ -1,0 +1,30 @@
+@import '../abstracts/variables';
+
+.nav {
+    display: flex;
+    .logo {
+        margin-right: 5.1875rem;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;       
+        li {
+            margin: 0 0.625rem;
+
+            a {
+                text-decoration: none;
+                font-size: 1.25rem;
+            }
+
+            .enter {
+                border: 1px solid $secondaryColor;
+                border-radius: 6px;
+                padding: 0.625rem 1.25rem;
+            }
+        }
+
+    }
+}

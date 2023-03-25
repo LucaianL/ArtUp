@@ -1,0 +1,29 @@
+@import '../abstracts/variables';
+.main {
+    text-align: center;
+    margin-top: 4.5625rem;
+
+    h1,
+    h2 {
+        font-size: 5rem;
+        font-weight: $bold;
+    }
+
+    h1 {
+        text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    h2 {
+        color: $bodyColor;
+        text-shadow:
+            -2px -2px 0 $primaryColor,
+            2px -2px 0 $primaryColor,
+            -2px 2px 0 $primaryColor,
+            2px 2px 0 $primaryColor;
+    }
+    img{
+        margin: 1.5rem 0 0 1rem;
+        height: 18.4375rem;
+        width: 100%;
+    }
+}
