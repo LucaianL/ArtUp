@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -37,6 +38,7 @@ table {
 body {
   background-color: #393139;
   padding: 1.75rem 10.625rem 0 10.625rem;
+  box-sizing: border-box;
 }
 
 * {
@@ -58,9 +60,6 @@ body {
   justify-content: space-between;
   width: 100%;
 }
-.nav ul li {
-  margin: 0 0.625rem;
-}
 .nav ul li a {
   text-decoration: none;
   font-size: 1.25rem;
@@ -71,24 +70,95 @@ body {
   padding: 0.625rem 1.25rem;
 }
 
-.main {
+.search-box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-top: 28px;
+}
+.search-box .search-button {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* ajuste a posição do ícone */
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("/assets/search.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.search-box input[type=text] {
+  width: 200px;
+  padding: 8px 30px 8px 10px;
+  border: 1px solid #BA3958;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.main.home {
   text-align: center;
   margin-top: 4.5625rem;
 }
-.main h1,
-.main h2 {
+.main.home h1,
+.main.home h2 {
   font-size: 5rem;
   font-weight: 700;
 }
-.main h1 {
+.main.home h1 {
   text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
-.main h2 {
+.main.home h2 {
   color: #393139;
   text-shadow: -2px -2px 0 #BA3958, 2px -2px 0 #BA3958, -2px 2px 0 #BA3958, 2px 2px 0 #BA3958;
 }
-.main img {
+.main.home img {
   margin: 1.5rem 0 0 1rem;
   height: 18.4375rem;
   width: 100%;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 3.75rem;
+  margin-top: 2.375rem;
+}
+.image-container img {
+  height: 8.75rem;
+  width: 100%;
+}
+.image-container .title-art {
+  font-weight: 800;
+  text-align: center;
+  font-size: 16px;
+}
+.image-container .text-art {
+  font-weight: 300;
+  font-size: 15px;
+  text-align: justify;
+}
+.image-container .art1,
+.image-container .art2,
+.image-container .art3 {
+  background-color: #935179;
+  margin: 0 auto;
+}
+.image-container .art1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.image-container .art2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.image-container .art3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
 }/*# sourceMappingURL=style.css.map */

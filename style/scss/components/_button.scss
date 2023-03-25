@@ -1,0 +1,31 @@
+@import '../abstracts/variables';
+
+.search-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 28px;
+    .search-button{
+        position: absolute;
+        top: 50%;
+        right: 10px; /* ajuste a posição do ícone */
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        background-image: url('/assets/search.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+    }
+}
+.search-box input[type="text"] {
+    width: 200px;
+    padding: 8px 30px 8px 10px;
+    border: 1px solid $primaryColor;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 16px;
+}
