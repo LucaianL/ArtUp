@@ -126,7 +126,7 @@ body {
 .image-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
+  grid-auto-flow: row;
   grid-gap: 3.75rem;
   margin-top: 2.375rem;
 }
@@ -143,22 +143,54 @@ body {
   font-weight: 300;
   font-size: 15px;
   text-align: justify;
+  padding: 0.625rem;
 }
-.image-container .art1,
-.image-container .art2,
-.image-container .art3 {
+.image-container .bottom-image-container {
+  padding: 1.625rem 0 0.625rem 0.625rem;
+  display: flex;
+  align-items: center;
+}
+.image-container .bottom-image-container .author {
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 0.625rem;
+}
+.image-container .bottom-image-container .value {
+  margin-left: auto;
+  background-color: #BA3958;
+  padding: 0.313rem 1.25rem 0.313rem 1.25rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.image-container .bottom-image-container img {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+}
+.image-container .art {
   background-color: #935179;
   margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
-.image-container .art1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
+.image-container .art:hover {
+  background-color: #393139;
 }
-.image-container .art2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
 }
-.image-container .art3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
+.modal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
 }/*# sourceMappingURL=style.css.map */
