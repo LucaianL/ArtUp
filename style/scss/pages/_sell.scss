@@ -1,0 +1,63 @@
+@import '../abstracts/variables';
+
+.add-art {
+    text-align: center;
+    margin-top: 100px;
+
+    button {
+        margin-bottom: 30px;
+        background-color: $secondaryColor;
+        width: 211px;
+        height: 51px;
+        font-size: 1.25rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    hr {
+        border: 2px solid $primaryColor;
+    }
+
+    p {
+        font-size: 1.25rem;
+        font-weight: $bold;
+        margin: 47px 0;
+    }
+}
+
+// estilização das artes adicionadas
+
+.art-list {
+    border: 1px solid $primaryColor;
+    padding: 40px;
+    display: flex;
+    img {
+        max-height: 300px;
+    }
+
+    div {
+        margin-left: 30px;
+        h3 {
+            display: inline-block;
+            font-size: 1.625rem;
+            font-weight: $bold;
+            margin-bottom: 10px;
+        }
+        .trash{
+            float: right;
+            cursor: pointer;
+        }
+        .value{
+            margin-bottom: 10px;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+
+}

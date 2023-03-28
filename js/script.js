@@ -1,6 +1,6 @@
 const modalTriggers = document.querySelectorAll('.modal-trigger');
 const modal = document.querySelector('.modal');
-const closeModalButton = modal.querySelector('.close-modal');
+const closeModalButton = modal.querySelector('.buttons-modal-cancel');
 
 modalTriggers.forEach(modalTrigger => {
     modalTrigger.addEventListener('click', () => {

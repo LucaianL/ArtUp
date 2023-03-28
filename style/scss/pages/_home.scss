@@ -1,8 +1,8 @@
 @import '../abstracts/variables';
 .main.home {
+    // seta todo o conteudo main para alinhar ao centro
     text-align: center;
-    margin-top: 4.5625rem;
-
+    margin-top: 73px;
     h1,
     h2 {
         font-size: 5rem;
@@ -12,8 +12,8 @@
     h1 {
         text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
     }
-
-    h2 {
+    
+    h2 {  //coloca a borda vermelha ao redor do h2
         color: $bodyColor;
         text-shadow:
             -2px -2px 0 $primaryColor,
@@ -22,8 +22,8 @@
             2px 2px 0 $primaryColor;
     }
     img{
-        margin: 1.5rem 0 0 1rem;
-        height: 18.4375rem;
+        margin: 24px 0 0 24px;
+        height: 295px;
         width: 100%;
     }
 }

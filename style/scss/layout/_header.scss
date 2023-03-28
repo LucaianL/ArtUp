@@ -3,7 +3,7 @@
 .nav {
     display: flex;
     .logo {
-        margin-right: 5.1875rem;
+        margin-right: 83px;
     }
     ul {
         display: flex;
@@ -16,11 +16,13 @@
                 text-decoration: none;
                 font-size: 1.25rem;
             }
-
+            a:hover{
+                color: $primaryColor;
+            }
             .enter {
                 border: 1px solid $secondaryColor;
                 border-radius: 6px;
-                padding: 0.625rem 1.25rem;
+                padding: 10px 20px;
             }
         }
 
