@@ -32,7 +32,7 @@
     </header>
     <main class="main">
         <div class="add-art">
-            <button>Adicinar arte</button>
+            <button class="modal-trigger">Adicinar arte</button>
             <hr>
             <p>Artes adicionadas</p>
         </div>
@@ -48,9 +48,40 @@
                     uma
                     as cores mais as cores mais as cores mais as cores mais as cores mais as cores mais as cores mais as
                     cores mais as cores mais as cores mais as cores mais as cores mais as cores mais</p>
-                </div>
+            </div>
         </div>
     </main>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-add-art">
+                <form action="" method="POST">
+                    <div class="form">
+                        <div class="add-image">
+                            <img src="/assets/image.svg" alt="icone de paisagem">
+                            <p>Adicionar imagens</p>
+                        </div>
+                        <div class="name-art">
+                            <label for="nameArt"></label>
+                            <input type="text" id="nameArt" name="nameArt" placeholder="Nome da sua arte...">
+                        </div>
+                        <div class="price">
+                            <label for="price"></label>
+                            <input type="text" id="price" name="price" placeholder="Preço R$">
+                        </div>
+                        <div class="description">
+                            <label for="description"></label>
+                            <textarea name="description" id="description" cols="30" rows="10" placeholder="Descrição da arte..."></textarea>
+                        </div>
+                    </div>
+                    <div class="buttons-modal">
+                        <button type="button" class="buttons-modal-cancel">cancelar</button>
+                        <button type="submit" class="buttons-modal-add">adicionar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="/js/script.js"></script>
 
 </html>

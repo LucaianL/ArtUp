@@ -66,31 +66,11 @@
 // ESTILIZAÇÃO DO MODAL
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-
-
     .modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 90%;
-        max-height: 90%;
-        background-color: $bodyColor;
-        border: 2px solid $primaryColor;
-        border-radius: 6px;
-
         .modal-figure {
             .title-and-value {
+                // margin: 40px 0 5px 0;
                 display: flex;
-                margin: 40px 0 5px 0;
                 align-items: baseline;
                 justify-content: space-between;
 
@@ -108,15 +88,17 @@
 
             .image-and-description {
                 display: flex;
-                div{
+
+                div {
                     width: 410px;
                     height: 210px;
                     flex: 1;
                     background-color: black;
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
-                    }   
+                    }
                 }
 
                 p {

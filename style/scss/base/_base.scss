@@ -1,5 +1,7 @@
 @import '../abstracts/variables';
-
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: $bodyColor;
     padding: 28px 170px 0 170px;

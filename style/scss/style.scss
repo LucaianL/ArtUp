@@ -2,9 +2,14 @@
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
+
 // components
-@import 'layout/header';
 @import 'components/button';
+
+// layouts
+@import 'layout/header';
+@import 'layout/modal';
+
 // pages
 @import 'pages/home';
 @import 'pages/gallery';
