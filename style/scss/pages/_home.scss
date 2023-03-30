@@ -1,11 +1,6 @@
 @import '../abstracts/variables';
 
-.index-body {
-    overflow: hidden;
-}
-
 .main.home {
-
     // seta todo o conteudo main para alinhar ao centro
     text-align: center;
     margin-top: 50px;
@@ -32,5 +27,20 @@
 
     img {
         margin: 24px 0 0 24px;
+        width: 100%;
+        max-width: 440px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .main.home {
+
+        h1,
+        h2 {
+            font-size: 3.5rem;
+        }
+        img{
+            margin: 24px 0 0 20px;
+        }
     }
 }

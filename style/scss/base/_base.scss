@@ -7,3 +7,9 @@ body{
     padding: 28px 170px 0 170px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 920px) {
+    body{
+        padding: 28px 20px 0 20px;
+    }
+}
