@@ -4,7 +4,8 @@
 @import 'base/typography';
 
 // components
-@import 'components/button';
+@import 'components/button-search';
+@import 'components/button-general';
 
 // layouts
 @import 'layout/header';
@@ -14,3 +15,4 @@
 @import 'pages/home';
 @import 'pages/gallery';
 @import 'pages/sell';
+@import 'pages/freelancer';

@@ -82,6 +82,20 @@ body {
   font-size: 1rem;
 }
 
+.button {
+  font-weight: 800;
+  font-size: 1.5rem;
+  background-color: #BA3958;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
 .nav {
   display: flex;
 }
@@ -260,27 +274,11 @@ body {
   text-align: center;
   margin: 38px 0 60px 0;
 }
-.modal .modal-content .modal-figure .buttons-modal .buttons-modal-cancel,
-.modal .modal-content .modal-figure .buttons-modal .buttons-modal-buy {
-  border: none;
-  font-size: 1.25rem;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 6px;
-  padding: 0 10px 2px 10px;
-}
 .modal .modal-content .modal-figure .buttons-modal .buttons-modal-cancel {
   margin-right: 165px;
-  background-color: #BA3958;
 }
 .modal .modal-content .modal-figure .buttons-modal .buttons-modal-buy {
   background-color: #D6B96F;
-}
-.modal .modal-content .modal-figure .buttons-modal .buttons-modal-cancel:hover {
-  opacity: 0.8;
-}
-.modal .modal-content .modal-figure .buttons-modal .buttons-modal-buy:hover {
-  opacity: 0.8;
 }
 
 .add-art {
@@ -292,13 +290,6 @@ body {
   background-color: #D6B96F;
   width: 211px;
   height: 51px;
-  font-size: 1.25rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.add-art button:hover {
-  opacity: 0.8;
 }
 .add-art hr {
   border: 2px solid #BA3958;
@@ -330,6 +321,9 @@ body {
   float: right;
   cursor: pointer;
 }
+.art-list div .trash:hover {
+  opacity: 0.8;
+}
 .art-list div .value {
   margin-bottom: 10px;
 }
@@ -358,7 +352,11 @@ body {
 .modal-add-art .form .add-image p {
   color: black;
 }
-.modal-add-art .form input, .modal-add-art .form textarea {
+.modal-add-art .form .add-image:hover {
+  opacity: 0.8;
+}
+.modal-add-art .form input,
+.modal-add-art .form textarea {
   border: 1px solid #BA3958;
   border-radius: 6px;
   background-color: transparent;
@@ -378,25 +376,58 @@ body {
   text-align: center;
   margin: 38px 0 20px 0;
 }
-.modal-add-art .buttons-modal .buttons-modal-cancel,
-.modal-add-art .buttons-modal .buttons-modal-add {
-  border: none;
-  font-size: 1.25rem;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 6px;
-  padding: 0 10px 2px 10px;
-}
 .modal-add-art .buttons-modal .buttons-modal-cancel {
   margin-right: 165px;
-  background-color: #BA3958;
 }
 .modal-add-art .buttons-modal .buttons-modal-add {
   background-color: #D6B96F;
 }
-.modal-add-art .buttons-modal .buttons-modal-cancel:hover {
-  opacity: 0.8;
+
+.freelancer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #BA3958;
 }
-.modal-add-art .buttons-modal .buttons-modal-add:hover {
-  opacity: 0.8;
+.freelancer img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.freelancer div {
+  margin-left: 10px;
+}
+.freelancer div h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: left;
+}
+.freelancer div p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.freelancer button {
+  margin-left: auto;
+}
+
+.modal-content {
+  text-align: center;
+}
+.modal-content .contacts-model {
+  padding: 50px;
+  width: 583px;
+  height: 246px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+.modal-content .contacts-model div {
+  display: flex;
+  align-items: center;
+}
+.modal-content .contacts-model div p {
+  margin-left: 20px;
+}
+.modal-content button {
+  margin: 60px 0 30px 0;
 }/*# sourceMappingURL=style.css.map */

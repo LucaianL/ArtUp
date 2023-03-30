@@ -1,0 +1,13 @@
+.button {
+    font-weight: $extraBold;
+    font-size: 1.5rem;
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+}

@@ -2,12 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <title>ArtUp</title>
+    <title>ArtUp - vender</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/logo32px.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/logo32pxPng.png" type="image/png" />
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Lucaian">
-    <meta name="description" content="descrição bacanuda">
-    <meta name="keywords" content="html5, tecnologia">
+
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +28,14 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Galeria</a></li>
                 <li><a href="sell.html">Vender</a></li>
-                <li><a href="#">Freelancer</a></li>
-                <li><a class="enter" href="#">Entrar</a></li>
+                <li><a href="freelancer.html">Freelancer</a></li>
+                <li><a class="enter" href="signUp.html">Entrar</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <div class="add-art">
-            <button class="modal-trigger">Adicinar arte</button>
+            <button class="modal-trigger button">Adicinar arte</button>
             <hr>
             <p>Artes adicionadas</p>
         </div>
@@ -70,12 +73,13 @@
                         </div>
                         <div class="description">
                             <label for="description"></label>
-                            <textarea name="description" id="description" cols="30" rows="10" placeholder="Descrição da arte..."></textarea>
+                            <textarea name="description" id="description" cols="30" rows="10"
+                                placeholder="Descrição da arte..."></textarea>
                         </div>
                     </div>
                     <div class="buttons-modal">
-                        <button type="button" class="buttons-modal-cancel">cancelar</button>
-                        <button type="submit" class="buttons-modal-add">adicionar</button>
+                        <button type="button" class="buttons-modal-cancel button">cancelar</button>
+                        <button type="submit" class="buttons-modal-add button">adicionar</button>
                     </div>
                 </form>
             </div>

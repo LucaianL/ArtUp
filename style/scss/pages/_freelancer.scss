@@ -1,0 +1,61 @@
+@import '../abstracts/variables';
+
+.freelancer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $primaryColor;
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    div {
+        margin-left: 10px;
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: $extraBold;
+            text-align: left;
+        }
+
+        p {
+            font-weight: $regular;
+            font-size: 1rem;
+        }
+    }
+
+    button {
+        margin-left: auto;
+    }
+
+}
+
+// estilização do model
+
+.modal-content {
+    text-align: center;
+
+    .contacts-model {
+        padding: 50px;
+        width: 583px;
+        height: 246px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+
+        div {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-left: 20px;
+            }
+        }
+    }
+    button{
+        margin: 60px 0 30px 0;
+    }
+}
