@@ -72,7 +72,7 @@
     .modal-content {
         .modal-figure {
             .title-and-value {
-                margin: 40px 0 5px 0;
+                margin-bottom: 5px;
                 display: flex;
                 align-items: baseline;
                 justify-content: space-between;
@@ -93,10 +93,8 @@
                 display: flex;
 
                 div {
-                    width: 410px;
-                    height: 210px;
-                    // flex: 1;
-                    background-color: black;
+                    width: 55%;
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -104,7 +102,8 @@
                 }
 
                 p {
-                    width: 360px;
+                    width: 45%;
+                    // width: 360px;
                     font-size: 1rem;
                     font-weight: $medium;
                     margin-left: 10px;
@@ -133,11 +132,10 @@
             }
 
             .buttons-modal {
-                text-align: center;
-                // margin: 38px 0 60px 0;
+                margin-top: 10px;
 
                 .buttons-modal-cancel {
-                    margin-right: 165px;
+                    margin-right: 20%;
                 }
 
                 .buttons-modal-buy {
@@ -148,9 +146,36 @@
     }
 }
 
-@media screen and (max-width: 920px) {
-    .image-and-description {
-        display: block;
+@media screen and (max-width: 830px) {
+    .modal .modal-content .modal-figure {
+        .title-and-value {
+            h3{
+                text-align: left;
+            }
+        }
+        .image-and-description {
+            flex-wrap: wrap;
+
+            div {
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        .buttons-modal {
+            .buttons-modal-cancel {
+                margin-right: 0;
+            }
+
+            .buttons-modal-buy {
+                margin: 20px 0 0 0;
+                background-color: $secondaryColor;
+            }
+        }
     }
 
 }

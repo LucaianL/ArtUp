@@ -4,8 +4,8 @@
 <head>
     <title>ArtUp - galeria</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/logo32px.ico" type="image/x-icon">
-    <link rel="icon" href="/assets/logo32pxPng.png" type="image/png" />
+    <link rel="shortcut icon" href="../assets/logo32px.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/logo32pxPng.png" type="image/png" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,14 +24,14 @@
         <nav class="nav">
             <img class="logo" src="../assets/logo.svg" alt="logo da ArtUp">
             <ul class="nav-item">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Galeria</a></li>
-                <li><a href="sell.html">Vender</a></li>
-                <li><a href="freelancer.html">Freelancers</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="gallery.html">Galeria</a></li>
+                <li><a class="nav-link" href="sell.html">Vender</a></li>
+                <li><a class="nav-link" href="freelancer.html">Freelancers</a></li>
                 <li><a class="enter" href="signIn.html">Entrar</a></li>
             </ul>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="/assets/hamburgMenu.svg" alt="menu"></button>
+                <button onclick="menuShow()"><img class="icon" src="../assets/hamburgMenu.svg" alt="menu"></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -51,37 +51,37 @@
     <main class="main">
         <div class="image-container">
             <figure class="art modal-trigger">
-                <img src="/assets/baseImage.png" alt="imagem base">
+                <img src="../assets/baseImage.png" alt="imagem base">
                 <figcaption class="title-art">Pack de arte barroca</figcaption>
                 <figcaption class="text-art">Artes barrocas 3d feitas pelo de fato um lindo barroco mas barroco aaaaaaa
                     mas para com iss
                     grande designer Lucaian</figcaption>
                 <div class="bottom-image-container">
-                    <img src="/assets/baseImage.png" alt="autor da arte">
+                    <img src="../assets/baseImage.png" alt="autor da arte">
                     <p class="author">by Lucaian Lutke</p>
                     <p class="value">100R$</p>
                 </div>
             </figure>
             <figure class="art modal-trigger">
-                <img src="/assets/baseImage.png" alt="imagem base">
+                <img src="../assets/baseImage.png" alt="imagem base">
                 <figcaption class="title-art">Pack de arte barroca</figcaption>
                 <figcaption class="text-art">Artes barrocas 3d feitas pelo de fato um lindo barroco mas barroco aaaaaaa
                     mas para com iss
                     grande designer Lucaian</figcaption>
                 <div class="bottom-image-container">
-                    <img src="/assets/baseImage.png" alt="autor da arte">
+                    <img src="../assets/baseImage.png" alt="autor da arte">
                     <p class="author">by Lucaian Lutke</p>
                     <p class="value">100R$</p>
                 </div>
             </figure>
             <figure class="art modal-trigger">
-                <img src="/assets/baseImage.png" alt="imagem base">
+                <img src="../assets/baseImage.png" alt="imagem base">
                 <figcaption class="title-art">Pack de arte barroca</figcaption>
                 <figcaption class="text-art">Artes barrocas 3d feitas pelo de fato um lindo barroco mas barroco aaaaaaa
                     mas para com iss
                     grande designer Lucaian</figcaption>
                 <div class="bottom-image-container">
-                    <img src="/assets/baseImage.png" alt="autor da arte">
+                    <img src="../assets/baseImage.png" alt="autor da arte">
                     <p class="author">by Lucaian Lutke</p>
                     <p class="value">100R$</p>
                 </div>
@@ -89,6 +89,7 @@
 
         </div>
     </main>
+    <!-- MODAL -->
     <div class="modal">
         <div class="modal-content">
             <figure class="modal-figure">
@@ -98,7 +99,7 @@
                 </div>
                 <div class="image-and-description">
                     <div>
-                        <img src="/assets/baseImage.png" alt="imagem base">
+                        <img src="../assets/baseImage.png" alt="imagem base">
                     </div>
                     <p>Artes barrocas 3d feitas pelo de fato um lindo barroco mas barroco
                         aaaaaaa
@@ -106,7 +107,7 @@
                         grande designer Lucaian</p>
                 </div>
                 <div class="author">
-                    <img src="/assets/baseImage.png" alt="autor da arte" class="art-author-img">
+                    <img src="../assets/baseImage.png" alt="autor da arte" class="art-author-img">
                     <p>by Lucaian Lutke</p>
                 </div>
                 <div class="buttons-modal">
@@ -117,6 +118,7 @@
         </div>
     </div>
 </body>
-<script src="/js/script.js"></script>
+<script src="../js/modal.js"></script>
+<script src="../js/script.js"></script>
 
 </html>

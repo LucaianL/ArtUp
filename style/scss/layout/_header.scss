@@ -23,7 +23,9 @@
             a:hover {
                 color: $primaryColor;
             }
-
+            .active {
+                color: yellow;
+              }
             .enter {
                 border: 1px solid $secondaryColor;
                 border-radius: 6px;
@@ -44,7 +46,7 @@
     display: none;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 768px) {
     .nav-item {
         li {
             display: none;
@@ -66,17 +68,18 @@
         padding-bottom: 10px;
         border-bottom: 1px solid $primaryColor;
         background: linear-gradient(to bottom, rgba(57, 49, 57, 0.2) 0%, rgba(43, 36, 43, 0.5) 100%);
+
         ul {
             display: flex;
             flex-direction: column;
             text-align: center;
-            
+
             li {
                 display: flex;
                 margin-top: 20px;
 
                 a {
-                    padding: 15px 0 0 0 ;
+                    padding: 15px 0 0 0;
                     text-decoration: none;
                     font-size: 1.5rem;
                     width: 100%;
@@ -96,3 +99,4 @@
         display: block;
     }
 }
+
