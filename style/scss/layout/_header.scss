@@ -23,8 +23,8 @@
             a:hover {
                 color: $primaryColor;
             }
-            .active {
-                color: yellow;
+            a.active {
+                border-bottom: 2px solid $primaryColor;
               }
             .enter {
                 border: 1px solid $secondaryColor;

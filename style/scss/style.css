@@ -121,8 +121,8 @@ button:hover {
 .nav ul li a:hover {
   color: #BA3958;
 }
-.nav ul li .active {
-  color: yellow;
+.nav ul li a.active {
+  border-bottom: 2px solid #BA3958;
 }
 .nav ul li .enter {
   border: 1px solid #D6B96F;
@@ -368,8 +368,6 @@ button:hover {
 .add-art button {
   margin-bottom: 30px;
   background-color: #D6B96F;
-  width: 211px;
-  height: 51px;
 }
 .add-art hr {
   border: 2px solid #BA3958;
@@ -384,9 +382,10 @@ button:hover {
   border: 1px solid #BA3958;
   padding: 40px;
   display: flex;
+  align-items: center;
 }
 .art-list img {
-  max-height: 300px;
+  max-height: 150px;
 }
 .art-list div {
   margin-left: 30px;
@@ -453,7 +452,10 @@ button:hover {
   resize: none;
 }
 .modal-add-art .buttons-modal {
-  text-align: center;
+  margin-top: 38px;
+}
+.modal-add-art .buttons-modal button {
+  width: 140px;
 }
 .modal-add-art .buttons-modal .buttons-modal-cancel {
   margin-right: 165px;
@@ -462,6 +464,70 @@ button:hover {
   background-color: #D6B96F;
 }
 
+@media screen and (max-width: 768px) {
+  .art-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .art-list .image-art-list {
+    width: 100%;
+    max-width: 320px;
+  }
+  .art-list div {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .art-list div h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  .modal-add-art {
+    margin: 20px;
+  }
+  .modal-add-art .form {
+    display: block;
+  }
+  .modal-add-art .form div {
+    margin-top: 20px;
+  }
+  .modal-add-art .form div input {
+    width: 100%;
+  }
+  .modal-add-art .form .add-image {
+    padding: 20px 0;
+  }
+  .modal-add-art .form .add-image:hover {
+    opacity: 0.8;
+  }
+  .modal-add-art .form input,
+  .modal-add-art .form textarea {
+    border: 1px solid #BA3958;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 7px 15px;
+  }
+  .modal-add-art .form .description textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+  }
+  .modal-add-art .buttons-modal {
+    margin-top: 20px;
+  }
+  .modal-add-art .buttons-modal button {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .modal-add-art .buttons-modal .buttons-modal-cancel {
+    margin-right: 0;
+  }
+  .modal-add-art .buttons-modal .buttons-modal-add {
+    margin-top: 20px;
+    background-color: #D6B96F;
+  }
+}
 .freelancer {
   margin-top: 30px;
   display: flex;
@@ -511,6 +577,19 @@ button:hover {
   margin: 60px 0 30px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .modal-content .contacts-model {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .modal-content .contacts-model div {
+    margin-top: 20px;
+  }
+  .modal-content .button-contacts {
+    margin: 0 0 30px 0;
+  }
+}
 .sign-in {
   display: flex;
   justify-content: center;

@@ -55,7 +55,25 @@
             }
         }
     }
-    .button-contacts{
+
+    .button-contacts {
         margin: 60px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        .contacts-model {
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            div {
+                margin-top: 20px;
+            }
+        }
+        .button-contacts {
+            margin: 0 0 30px 0;
+        }
     }
 }
